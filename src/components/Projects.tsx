@@ -129,16 +129,18 @@ const Projects = () => {
     href={project.url}
     target="_blank"
     rel="noopener noreferrer"
-    className="btn"
+    className="flex items-center gap-2 text-white font-semibold"
   >
     View Details
+    <ExternalLink size={16} />
   </a>
 ) : (
-  <button className="btn">
+  <button className="flex items-center gap-2 text-white font-semibold">
     View Details
+    <ExternalLink size={16} />
   </button>
-               <ExternalLink size={16} />
 )}
+
               </div>
             </div>
           ))}
