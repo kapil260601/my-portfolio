@@ -203,8 +203,8 @@ const Contact = () => {
             Designed & Built by <span className="font-semibold text-blue-600">Kapil Patel</span>
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            2025 - All rights reserved
-          </p>
+  {new Date().getFullYear()} - All rights reserved
+</p>
         </div>
       </footer>
     </section>
