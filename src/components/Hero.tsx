@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fadeIn delay-500">
-            Experienced Software Engineer with 3.6+ years of expertise in building scalable web applications.
+            Experienced Software Engineer with 3.9+ years of expertise in building scalable web applications.
             Passionate about creating impactful software that improves team efficiency.
           </p>
 
