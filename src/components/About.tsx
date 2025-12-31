@@ -41,7 +41,7 @@ const About = () => {
                 Software Engineer - MERN Stack Developer
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Experienced Software Developer with <span className="font-semibold text-blue-600">3.6+ years</span> of hands-on
+                Experienced Software Developer with <span className="font-semibold text-blue-600">3.9+ years</span> of hands-on
                 experience in building scalable web applications using the MERN stack. Specialized in frontend development with
                 React.js and expertise in backend services with Node.js and Express.js.
               </p>
