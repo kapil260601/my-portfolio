@@ -22,6 +22,7 @@ const Projects = () => {
       description:
         'Mobile-based garage/workshop management software. Built admin panel and booking UI using React.js, Material-UI, and Node.js backend for seamless workshop operations.',
       technologies: ['React.js', 'Material-UI', 'Node.js', 'MongoDB', 'Express.js'],
+      url: "https://www.autorox.ai/",
       impact: 'Complete admin and booking management solution',
       highlights: [
         'Comprehensive admin panel for workshop management',
@@ -36,6 +37,7 @@ const Projects = () => {
       description:
         'E-commerce platform offering home goods from 5000+ brands, including furniture, lighting, and cookware. Provides free shipping on most items, catering to diverse styles and budgets.',
       technologies: ['React.js', 'Redux', 'Bootstrap', 'RESTful APIs', 'Axios'],
+      url: "https://www.wayfair.com/",
       impact: 'Large-scale e-commerce solution',
       highlights: [
         'Product catalog with 5000+ brands',
@@ -122,10 +124,21 @@ const Projects = () => {
               </div>
 
               <div className={`px-8 py-4 bg-gradient-to-r ${project.gradient} bg-opacity-5`}>
-                <button className="flex items-center gap-2 text-blue-600 font-medium hover:gap-3 transition-all">
-                  <span>View Details</span>
-                  <ExternalLink size={16} />
-                </button>
+                {project.url ? (
+  <a
+    href={project.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn"
+  >
+    View Details
+  </a>
+) : (
+  <button className="btn">
+    View Details
+  </button>
+               <ExternalLink size={16} />
+)}
               </div>
             </div>
           ))}
