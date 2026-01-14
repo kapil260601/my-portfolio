@@ -4,7 +4,7 @@ const About = () => {
   const highlights = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: '3.9+ Years',
+      title: '4.2+ Years',
       description: 'Professional Experience',
     },
     {
@@ -41,7 +41,7 @@ const About = () => {
                 Software Engineer - MERN Stack Developer
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Experienced Software Developer with <span className="font-semibold text-blue-600">3.9+ years</span> of hands-on
+                Experienced Software Developer with <span className="font-semibold text-blue-600">4.2+ years</span> of hands-on
                 experience in building scalable web applications using the MERN stack. Specialized in frontend development with
                 React.js and expertise in backend services with Node.js and Express.js.
               </p>
