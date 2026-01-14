@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fadeIn delay-500">
-            Experienced Software Engineer with 3.9+ years of expertise in building scalable web applications.
+            Experienced Software Engineer with 4.2+ years of expertise in building scalable web applications.
             Passionate about creating impactful software that improves team efficiency.
           </p>
 
@@ -84,20 +84,20 @@ const Hero = () => {
               className="flex items-center gap-2 bg-white bg-opacity-10 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-opacity-20 transition-all"
             >
               <Phone size={18} />
-              <span>+91 9174570187</span>
+              <span>+91 8629972617</span>
             </a>
             <a
               href="mailto:kapil2601patel@gmail.com"
               className="flex items-center gap-2 bg-white bg-opacity-10 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-opacity-20 transition-all"
             >
               <Mail size={18} />
-              <span>kapil2601patel@gmail.com</span>
+              <span>kapil001patel@gmail.com</span>
             </a>
           </div>
 
           <div className="flex justify-center gap-6 animate-fadeIn delay-1000">
             <a
-              href="https://github.com/kapilpatel"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white bg-opacity-10 backdrop-blur-sm rounded-full hover:bg-opacity-20 transition-all transform hover:scale-110"
