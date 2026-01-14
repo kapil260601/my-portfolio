@@ -22,7 +22,7 @@ const Experience = () => {
       title: 'Software Development Engineer',
       company: 'DevSecRoot Technologies',
       location: 'Indore, IN',
-      period: 'March 2022 - Jan 2025',
+      period: 'Oct 2021 - Jan 2025',
       type: 'Full-time',
       achievements: [
         'Designed and developed responsive, user-friendly web pages using custom CSS and Bootstrap',
