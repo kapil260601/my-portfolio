@@ -30,14 +30,14 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'kapil001patel@gmail.com',
-      link: 'mailto:kapil001patel@gmail.com',
+      value: 'kapil2601patel@gmail.com',
+      link: 'mailto:kapil2601patel@gmail.com',
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+91 8629972617',
-      link: 'tel:+91 8629972617',
+      value: '+91 9174570187',
+      link: 'tel:+91 9174570187',
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -100,14 +100,14 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4 pt-4">
-              <a
+              {/* <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-colors transform hover:scale-110"
               >
                 <Github className="w-6 h-6" />
-              </a>
+              </a> */}
               <a
                 href="https://linkedin.com/in/kapilpatel"
                 target="_blank"

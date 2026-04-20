@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Software Developer',
-      company: 'Team Plus Staffing Solution (Client: ShareChat)',
+      company: 'TeckValley India Pvt. Ltd (Client: ShareChat)',
       location: 'Indore, IN',
       period: 'Jan 2025 - Present',
       type: 'Current Role',
