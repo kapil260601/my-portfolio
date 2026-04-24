@@ -37,20 +37,24 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-white">
+    <section id="experience" className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <div className="inline-flex items-center px-4 py-2 bg-purple-100 text-purple-700 rounded-full mb-4">
+            <span className="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+            <span className="text-sm font-medium">Career Journey</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 to-purple-900 bg-clip-text text-transparent mb-4">
             Work Experience
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Building impactful solutions and driving engineering excellence
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Building impactful solutions and <span className="font-semibold text-purple-600">driving engineering excellence</span>
           </p>
         </div>
 
         <div className="relative">
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-purple-300 to-blue-300 rounded-full"></div>
 
           {experiences.map((exp, index) => (
             <div
@@ -62,35 +66,41 @@ const Experience = () => {
               <div className="md:w-1/2"></div>
 
               <div className="relative md:w-1/2">
-                <div className="hidden md:block absolute top-6 left-0 md:left-auto md:right-0 transform md:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="hidden md:block absolute top-6 left-0 md:left-auto md:right-0 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full border-4 border-white shadow-lg z-10 animate-pulse"></div>
 
-                <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-102">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="p-3 bg-blue-100 rounded-lg">
-                        <Briefcase className="w-6 h-6 text-blue-600" />
+                <div className="bg-white border border-purple-200 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:border-purple-300">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg">
+                        <Briefcase className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
-                        <p className="text-blue-600 font-medium">{exp.company}</p>
+                        <h3 className="text-xl font-bold bg-gradient-to-r from-gray-900 to-purple-900 bg-clip-text text-transparent">{exp.title}</h3>
+                        <p className="text-purple-600 font-semibold">{exp.company}</p>
+                        <p className="text-gray-500 text-sm">{exp.location}</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-wrap gap-4 mb-6">
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <Calendar size={16} />
-                      <span>{exp.period}</span>
+                    <div className="flex items-center gap-2 text-sm text-gray-600 bg-purple-50 px-3 py-1 rounded-full">
+                      <Calendar size={16} className="text-purple-600" />
+                      <span className="font-medium">{exp.period}</span>
                     </div>
-                    <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">
+                    <span className={`px-4 py-2 text-sm rounded-full font-semibold border ${
+                      exp.type === 'Current Role' 
+                        ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white border-purple-500' 
+                        : 'bg-purple-100 text-purple-700 border-purple-300'
+                    }`}>
                       {exp.type}
                     </span>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-purple-900 mb-3">Key Achievements:</h4>
                     {exp.achievements.map((achievement, idx) => (
-                      <div key={idx} className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                      <div key={idx} className="flex items-start gap-3 group">
+                        <div className="w-3 h-3 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full mt-2 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
                         <p className="text-gray-700 leading-relaxed">{achievement}</p>
                       </div>
                     ))}
