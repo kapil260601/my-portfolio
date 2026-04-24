@@ -66,7 +66,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity animate-glow"></div>
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm">
                   <img 
-                    src="/Images/Porfolio-Img.jpeg" 
+                    src="/Porfolio-Img.jpeg" 
                     alt="Kapil Patel" 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
