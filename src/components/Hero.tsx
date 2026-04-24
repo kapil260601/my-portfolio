@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const titles = ['MERN Stack Developer', 'Frontend Specialist', 'React.js Expert', 'Full Stack Engineer'];
+  const titles = ['MERN Stack Developer', 'Frontend Developement Engineer', 'React.js Developer', 'Full Stack Engineer'];
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
