@@ -109,7 +109,7 @@ const Contact = () => {
                 <Github className="w-6 h-6" />
               </a> */}
               <a
-                href="https://linkedin.com/in/kapilpatel"
+                href="https://www.linkedin.com/in/kapil-patel-14789822a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors transform hover:scale-110"
