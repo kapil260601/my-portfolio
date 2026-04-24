@@ -61,31 +61,18 @@ const Hero = () => {
               <span className="text-purple-200 text-sm font-medium">Available for Opportunities</span>
             </div>
             
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative group animate-scaleIn">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition-opacity animate-glow"></div>
-                <div className="relative w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm">
-                  <img 
-                    src="/Porfolio-Img.jpeg" 
-                    alt="Kapil Patel" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-              </div>
-              
-              <div className="text-center space-y-4">
-                <p className="text-lg sm:text-xl text-purple-200 font-medium animate-slideDown tracking-wide">
-                  Hello, I'm
+            <div className="text-center space-y-4">
+              <p className="text-lg sm:text-xl text-purple-200 font-medium animate-slideDown tracking-wide">
+                Hi, I'm
+              </p>
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight animate-slideUp bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
+                Kapil Patel
+              </h1>
+              <div className="h-12 sm:h-16">
+                <p className="text-2xl sm:text-3xl md:text-4xl text-purple-200 font-light">
+                  {displayText}
+                  <span className="animate-blink text-purple-400">|</span>
                 </p>
-                <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight animate-slideUp bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent">
-                  Kapil Patel
-                </h1>
-                <div className="h-12 sm:h-16">
-                  <p className="text-2xl sm:text-3xl md:text-4xl text-purple-200 font-light">
-                    {displayText}
-                    <span className="animate-blink text-purple-400">|</span>
-                  </p>
-                </div>
               </div>
             </div>
           </div>
